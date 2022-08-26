@@ -1,9 +1,5 @@
-nested data structure
-retrieve element
-use [] to retrieve the inner hash
+>On line 2 what we’re doing is initializing another local variable, `arr_b`, to the return value of invoking the `dup` method and passing in `arr_a` as a parameter.
 
-Variable `my_hash` points to the nested data structure `{a: 1, b: {d: 3, e: 5}, c: 7}`
+I don't think that `arr_a` is a parameter in this case. I would say something like 'invoking the `dup` method on `arr_a`' or 'invoking the `dup` method on the object that variable `arr_a` is referencing.' 
 
-A hash is a data structure that stores items by associated keys. Entries in a hash are often referred to as key-value pairs. This creates an associative representation of data.
-
-A hash maps each of its unique keys to a specific value: `my_hash[:b]` is the unique key for value `{:d=>3, :e=>5}` and `my_hash[:b][:d]` is the unique key for value `3`.
+Then on line 4 we invoke the upcase! method and pass element 1 of arr_b in as an argument to it.
